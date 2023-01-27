@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wixden Pro Themes | Stunning Website Designer</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- tailwind customization -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              dark: "#212428",
+              orange: "#FF834F",
+              lightWhite: "#c4cfde",
+              btnBg: "linear-gradient(145deg, #1e2024, #23272b)",
+            },
+            fontFamily: {
+              montserrat: ["Montserrat", "sans-serif"],
+            },
+            boxShadow: {
+              normal: "10px 10px 19px #1c1e22, -10px -10px 19px #262a2e",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="bg-dark">
+    <header>
+      <div class="container mx-auto">
+        <nav class="text-white flex items-center justify-between p-5">
+          <div class="logo">
+            <img class="w-48" src="./assets/images/LogoWhite.png" alt="" />
+          </div>
+          <div class="menu">
+            <ul class="flex list-none space-x-10 font-semibold uppercase">
+              <li><a href="#">About</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Portfolio</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+        <div class="py-10 px-5 md:flex justify-between items-center gap-10">
+          <div class="basis-2/5">
+            <!-- My Info -->
+            <div
+              class="p-10 text-white font-montserrat shadow-normal bg-dark rounded-2xl hover:-translate-y-3 transition-transform duration-500"
+            >
+              <p class="uppercase text-lightWhite">Welcome to Wixden</p>
+              <h1 class="font-bold text-5xl leading-tight mb-5 mt-2">
+                Hi! I'm <span class="text-orange">Akhtar</span>
+              </h1>
+              <p class="text-lightWhite">
+                Professional Web Designer & Developer.
+                <br />
+                Hire for Projects.
+              </p>
+              <div class="mt-8 text-lightWhite space-y-3">
+                <div class="flex items-center">
+                  <i
+                    class="fa-regular fa-file text-orange text-xl w-6 mr-3"
+                  ></i>
+                  <p>Web Designer & Developer</p>
+                </div>
+                <div class="flex items-center">
+                  <i
+                    class="fa-regular fa-envelope text-orange text-xl w-6 mr-3"
+                  ></i>
+                  <p>Yourmail@mail.com</p>
+                </div>
+                <div class="flex items-center">
+                  <i
+                    class="fa fa-light fa-location-dot text-orange text-xl w-6 mr-3"
+                  ></i>
+                  <p>Kingston, New York 12401</p>
+                </div>
+              </div>
+            </div>
+            <!-- My Info End -->
+            <!-- Download CV -->
+            <div
+              class="mt-10 p-10 text-white font-montserrat shadow-normal bg-dark rounded-2xl"
+            >
+              <p class="mb-5">Download my curriculum vitae:</p>
+              <div class="text-orange font-medium">
+                <button
+                  class="py-4 px-10 shadow-normal bg-btnBg rounded-md uppercase hover:bg-black hover:bg-opacity-20 transition-all duration-500 hover:-translate-y-2"
+                >
+                  Download CV
+                </button>
+                <button
+                  class="py-4 px-10 shadow-normal bg-btnBg rounded-md ml-8 uppercase hover:bg-black hover:bg-opacity-20 transition-all duration-500 hover:-translate-y-2"
+                >
+                  Contact Me
+                </button>
+              </div>
+            </div>
+            <!-- Download CV End -->
+          </div>
+          <!-- Hero section Thumbnail -->
+          <div
+            class="basis-3/5 shadow-normal rounded-2xl flex items-center justify-center p-10 bg-dark overflow-hidden"
+          >
+            <div class="overflow-hidden rounded-2xl w-full h-full">
+              <img
+                class="hover:scale-105 transition-all duration-500"
+                src="./assets/images/banner-02.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+  </body>
+</html>
